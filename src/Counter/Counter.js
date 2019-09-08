@@ -1,41 +1,25 @@
-import React, {Component} from 'react';
-import './Counter.css';
+import React from 'react';
+import './Counter.css'
 
-
-class Counter extends Component {
-  constructor(props) {
-    super(props);
-      this.state = {count:0};
-  }
-
-
-    increment = () => {
-      this.setState(prevState => ({
-        count:prevState.count + 1
-      }));
-    }
-
-    reset = () => {
-      this.setState(prevState => ({
-        count:prevState.count=0
-      }));
-    }
-
-    render() {
-      return (
-     <div  className="Main">
-
-     <div onClick={this.increment} className="circle">
-
-     <p>{this.state.count}</p>
-
-     </div>
-
-     <button onClick={this.reset}>Reset Counter</button>
-
+export default function counter(props) {
+  return (
+    <div>
+      <div className={props.count === 0 ? "circle neutral" : props.count % 10 === 0 ? "circle pink" : props.count % 2 === 0 ? "circle even" : "circle odd"}>
+        <p>{props.count}</p>
       </div>
-      );
-    }
-  }
+      <div className="button">
+        <div className="increment">
+          <p onClick={props.increment}>Increase</p>
+        </div>
+        <div className="decrement">
+          <p onClick={props.decrement}>Decrease</p>
+        </div>
+        <div className="reset">
+          <p onClick={props.reset}>Reset</p>
+        </div>
+      </div>
+    </div >
 
-export default Counter;
+  )
+}
+

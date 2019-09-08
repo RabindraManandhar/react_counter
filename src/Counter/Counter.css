@@ -1,28 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .circle {
   height: 300px;
   width: 300px;
-  background-color: #0080ff;
   border-radius: 50%;
+  border: 1px solid black;
+  margin: 20vh auto 20px auto;
 }
 
-p {
+.circle p {
+  font-size: 200px;
   text-align: center;
-  color: #fff;
-  font-size: 210px;
 }
 
-.Main {
-  margin: auto 40%;
+.odd {
+  background-color: blue;
 }
 
-button {
-  height: 50px;
-  width: 150px;
+.even {
+  background-color: red;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.button {
+  display: inline;
+  margin: 20px 0 0 650px;
+}
+
+.increment {
+  display: inline-block;
+  height: 20px;
+  width: 100px;
   padding: 10px;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 18px;
-  background-color: #008000;
-  display: block;
-  margin: 40px auto auto 70px;
+  margin-right: 20px;
+  background-color: grey;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.increment p {
+  text-align: center;
+}
+
+.decrement {
+  display: inline-block;
+  height: 20px;
+  width: 100px;
+  padding: 10px;
+  margin-right: 20px;
+  background-color: grey;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.decrement p {
+  text-align: center;
+}
+
+.reset {
+  display: inline-block;
+  height: 20px;
+  width: 100px;
+  padding: 10px;
+  margin-right: 20px;
+  background-color: grey;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.reset p {
+  text-align: center;
 }
