@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Counter from './Components/Counter';
+import Counter from './Counter/Counter';
 
 export default class App extends Component {
   state = {
