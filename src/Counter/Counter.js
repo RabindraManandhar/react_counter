@@ -1,7 +1,7 @@
 import React from 'react';
 import './Counter.css'
 
-export default function counter(props) {
+function Counter(props) {
   return (
     <div>
       <div className={props.count === 0 ? "circle neutral" : props.count % 10 === 0 ? "circle pink" : props.count % 2 === 0 ? "circle even" : "circle odd"}>
@@ -23,3 +23,4 @@ export default function counter(props) {
   )
 }
 
+export default Counter;

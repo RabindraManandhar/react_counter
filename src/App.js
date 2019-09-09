@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Counter from './Counter/Counter';
 
-export default class App extends Component {
+class App extends Component {
   state = {
     count: 0,
   };
@@ -45,3 +45,5 @@ export default class App extends Component {
     )
   }
 }
+
+export default App;
